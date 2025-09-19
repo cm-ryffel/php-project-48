@@ -1,0 +1,24 @@
+{
+    "name": "hexlet/code",
+    "bin": ["bin/gendiff"],
+    "description": "Generate diff",
+    "autoload": {
+        "psr-4": {
+            "Hexlet\\Code\\": "src/",
+            "Hexlet\\Code\\Parsers\\": "src/Parsers/",
+            "Hexlet\\Code\\Formatters\\": "src/Formatters/"
+        },
+         "files": [
+            "src/genDiff.php"
+        ]
+    },
+    "require": {
+        "docopt/docopt": "^1.0",
+        "funct/funct": "^1.6",
+        "symfony/yaml": "^7.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^12.3",
+        "squizlabs/php_codesniffer": "^4.0"
+    }
+}
