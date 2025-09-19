@@ -3,6 +3,7 @@
 namespace Differ\Differ\Tests;
 
 use PHPUnit\Framework\TestCase;
+
 use function Differ\Differ\genDiff;
 
 class GenDiffTest extends TestCase
@@ -39,7 +40,7 @@ class GenDiffTest extends TestCase
     {
         $this->expectException(\Exception::class);
         $this->expectExceptionMessage('File not found: nonexistent.json');
-        
+
         genDiff('nonexistent.json', __DIR__ . '/fixtures/file2.json');
     }
 
@@ -47,10 +48,10 @@ class GenDiffTest extends TestCase
     {
         $invalidJsonPath = __DIR__ . '/fixtures/invalid.json';
         file_put_contents($invalidJsonPath, '{ invalid json }');
-        
+
         $this->expectException(\Exception::class);
         $this->expectExceptionMessage('Invalid JSON');
-        
+
         try {
             genDiff($invalidJsonPath, __DIR__ . '/fixtures/file2.json');
         } finally {
@@ -64,10 +65,10 @@ class GenDiffTest extends TestCase
     {
         $invalidYamlPath = __DIR__ . '/fixtures/invalid.yml';
         file_put_contents($invalidYamlPath, 'invalid: yaml: content');
-        
+
         $this->expectException(\Exception::class);
         $this->expectExceptionMessage('Invalid YAML');
-        
+
         try {
             genDiff($invalidYamlPath, __DIR__ . '/fixtures/file2.yml');
         } finally {
