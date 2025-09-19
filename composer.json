@@ -4,9 +4,9 @@
     "description": "Generate diff",
     "autoload": {
         "psr-4": {
-            "Hexlet\\Code\\": "src/",
-            "Hexlet\\Code\\Parsers\\": "src/Parsers/",
-            "Hexlet\\Code\\Formatters\\": "src/Formatters/"
+            "Differ\\Differ\\": "src/",
+            "Differ\\Differ\\Parsers\\": "src/Parsers/",
+            "Differ\\Differ\\Formatters\\": "src/Formatters/"
         },
          "files": [
             "src/genDiff.php"

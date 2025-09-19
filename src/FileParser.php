@@ -1,8 +1,8 @@
 <?php
 
-namespace Hexlet\Code;
+namespace Differ\Differ;
 
-use Hexlet\Code\Parsers\ParserFactory;
+use Differ\Differ\Parsers\ParserFactory;
 
 class FileParser
 {

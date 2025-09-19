@@ -1,6 +1,6 @@
 <?php
 
-namespace Hexlet\Code\Parsers;
+namespace Differ\Differ\Parsers;
 
 class JsonParser implements ParserInterface
 {

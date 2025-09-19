@@ -1,10 +1,10 @@
 <?php
 
-namespace Hexlet\Code;
+namespace Differ\Differ;
 
-use Hexlet\Code\Formatters\StylishFormatter;
-use Hexlet\Code\Formatters\PlainFormatter;
-use Hexlet\Code\Formatters\JsonFormatter;
+use Differ\Differ\Formatters\StylishFormatter;
+use Differ\Differ\Formatters\PlainFormatter;
+use Differ\Differ\Formatters\JsonFormatter;
 
 class Formatters
 {

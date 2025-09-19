@@ -1,6 +1,6 @@
 <?php
 
-namespace Hexlet\Code\Parsers;
+namespace Differ\Differ\Parsers;
 
 use Symfony\Component\Yaml\Yaml;
 use Symfony\Component\Yaml\Exception\ParseException;

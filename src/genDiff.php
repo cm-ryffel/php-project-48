@@ -1,6 +1,6 @@
 <?php
 
-namespace Hexlet\Code;
+namespace Differ\Differ;
 
 function genDiff($filePath1, $filePath2, $format = 'stylish')
 {
